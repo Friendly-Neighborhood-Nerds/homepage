@@ -1,0 +1,38 @@
+.x:nth-of-type(1) {
+  transform: rotate(45deg);
+  transform-origin: top left;
+  width: 1.85rem;
+}
+
+.x:nth-of-type(2) {
+  transform-origin: center;
+  width: 0;
+}
+
+.x:nth-of-type(3) {
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+  width: 1.85rem;
+}
+
+.typewriter {
+  animation:
+      typing var(--typing-speed, 0.84s) steps(var(--char-count, 14)) both var(--typing-delay, 0.5s),
+      cursor .5s step-end infinite alternate;
+}
+
+/* cursor blinking */
+
+@keyframes cursor {
+  50% {
+      border-color: transparent
+  }
+}
+
+/* typing effect */
+
+@keyframes typing {
+  from {
+      width: 0
+  }
+}
