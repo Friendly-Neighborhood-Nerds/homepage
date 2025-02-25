@@ -10,7 +10,7 @@ export default function Panel(props) {
         <div class="w-40 sm:w-72 -ml-10 relative">
           <img src={`./images/nerds/${panel().id}.png`} class="absolute right-0 bottom-8 z-10 sm:max-h-11/10 max-h-75/100 max-w-52 sm:max-w-72" />
           <div class="-skew-x-15 w-full overflow-hidden relative" >
-            <div class="skew-x-15 bg-cover bg-center w-full h-60 ml-10 my-3 mr-auto shadow-lg"  style={{ "background-image": `url(. /images/backgrounds/bg-${textColor.split("-")[1]}.jpg)` }} />
+            <div class="skew-x-15 bg-cover bg-center w-full h-60 ml-10 my-3 mr-auto shadow-lg"  style={{ "background-image": `url(./images/backgrounds/bg-${textColor.split("-")[1]}.jpg)` }} />
           </div>
         </div>
         <div class="sm:w-96 w-60 overflow-hidden sm:-ml-11 -ml-10 mt-5 z-20">
