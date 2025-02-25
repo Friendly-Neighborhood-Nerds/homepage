@@ -212,21 +212,21 @@ export { Header, Main, Footer };
 
 const [book] = createSignal({
   pages:[
-    {frontimage: "./public/images/pages/cover.png",
-      backimage:"./public/images/pages/page0.png"},
-    {frontimage: "./public/images/pages/page01.png",
-      backimage:"./public/images/pages/page02.png"},
-      {frontimage: "./public/images/pages/page1.png",
-      backimage:"./public/images/pages/page2.png"},
-    {frontimage: "./public/images/pages/page3.png",
-      backimage:"./public/images/pages/page4.png"},
-    {frontimage: "./public/images/pages/page5.png",
-      backimage:"./public/images/pages/page6.png"},
-    {frontimage: "./public/images/pages/page7.png",
-      backimage:"./public/images/pages/page8.png"},
-      {frontimage: "./public/images/pages/page9.png",
-        backimage:"./public/images/pages/endpage.png"},
-        {frontimage: "./public/images/pages/endpage2.png",
-        backimage:"./public/images/pages/ad.png"}
+    {frontimage: "./images/pages/cover.png",
+      backimage:"./images/pages/page0.png"},
+    {frontimage: "./images/pages/page01.png",
+      backimage:"./images/pages/page02.png"},
+      {frontimage: "./images/pages/page1.png",
+      backimage:"./images/pages/page2.png"},
+    {frontimage: "./images/pages/page3.png",
+      backimage:"./images/pages/page4.png"},
+    {frontimage: "./images/pages/page5.png",
+      backimage:"./images/pages/page6.png"},
+    {frontimage: "./images/pages/page7.png",
+      backimage:"./images/pages/page8.png"},
+      {frontimage: "./images/pages/page9.png",
+        backimage:"./images/pages/endpage.png"},
+        {frontimage: "./images/pages/endpage2.png",
+        backimage:"./images/pages/ad.png"}
   ],
 });
