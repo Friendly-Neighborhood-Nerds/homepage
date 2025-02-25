@@ -8,7 +8,7 @@ export default function Panel(props) {
     return (
         <article class="w-full flex justify-center my-7">
         <div class="w-40 sm:w-72 -ml-10 relative">
-          <img src={`./public/images/nerds/${panel().id}.png`} class="absolute right-0 bottom-8 z-10 sm:max-h-11/10 max-h-75/100 max-w-52 sm:max-w-72" />
+          <img src={`./images/nerds/${panel().id}.png`} class="absolute right-0 bottom-8 z-10 sm:max-h-11/10 max-h-75/100 max-w-52 sm:max-w-72" />
           <div class="-skew-x-15 w-full overflow-hidden relative" >
             <div class="skew-x-15 bg-cover bg-center w-full h-60 ml-10 my-3 mr-auto shadow-lg"  style={{ "background-image": `url(. /images/backgrounds/bg-${textColor.split("-")[1]}.jpg)` }} />
           </div>
