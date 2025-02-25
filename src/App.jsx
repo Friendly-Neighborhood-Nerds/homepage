@@ -190,7 +190,7 @@ function Footer() {
         <li>Lauenenweg 48</li>
         <li>3600 Thun</li>
         <li>Schweiz</li>
-        <li><a class="underline text-purple-700 hover:text-nerd-purple-dark" href="mailto:info@friendlynerd.ch">info@friendlynerd.ch</a></li>
+        <li><a class="underline text-purple-700 hover:text-nerd-purple-dark" href="mailto:help@friendlynerds.ch">help@friendlynerds.ch</a></li>
       </ul>
     </div>
   ), ModalImprint = () =>  {
