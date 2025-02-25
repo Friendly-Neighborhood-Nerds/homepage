@@ -167,7 +167,7 @@ function Main(props) {
   addSection("Super Powers", flipbook, "Powers", null);
   addSection("Friendly Neighborhood Nerds", nerdpanels, "nerds", null);
   addSection("", <Contact />, "contact", openContact);
-  // addSection("", <></>, "blog", "https://blog.friendlynerd.ch/"); TODO Enable when first blog entry
+  // addSection("", <></>, "blog", "https://blog.friendlynerd.ch/"); TODO Enable when first blog entry  
   return(
     <main class={`mx-auto bg-comic bg-nerd-purple-light overflow-hidden`}>
       <For each={sections()}>{(content, i) =>
@@ -212,21 +212,21 @@ export { Header, Main, Footer };
 
 const [book] = createSignal({
   pages:[
-    {frontimage: "/src/assets/images/pages/cover.png",
-      backimage:"/src/assets/images/pages/page0.png"},
-    {frontimage: "/src/assets/images/pages/page01.png",
-      backimage:"/src/assets/images/pages/page02.png"},
-      {frontimage: "/src/assets/images/pages/page1.png",
-      backimage:"/src/assets/images/pages/page2.png"},
-    {frontimage: "/src/assets/images/pages/page3.png",
-      backimage:"/src/assets/images/pages/page4.png"},
-    {frontimage: "/src/assets/images/pages/page5.png",
-      backimage:"/src/assets/images/pages/page6.png"},
-    {frontimage: "/src/assets/images/pages/page7.png",
-      backimage:"/src/assets/images/pages/page8.png"},
-      {frontimage: "/src/assets/images/pages/page9.png",
-        backimage:"/src/assets/images/pages/endpage.png"},
-        {frontimage: "/src/assets/images/pages/endpage2.png",
-        backimage:"/src/assets/images/pages/ad.png"}
+    {frontimage: "./src/assets/images/pages/cover.png",
+      backimage:"./src/assets/images/pages/page0.png"},
+    {frontimage: "./src/assets/images/pages/page01.png",
+      backimage:"./src/assets/images/pages/page02.png"},
+      {frontimage: "./src/assets/images/pages/page1.png",
+      backimage:"./src/assets/images/pages/page2.png"},
+    {frontimage: "./src/assets/images/pages/page3.png",
+      backimage:"./src/assets/images/pages/page4.png"},
+    {frontimage: "./src/assets/images/pages/page5.png",
+      backimage:"./src/assets/images/pages/page6.png"},
+    {frontimage: "./src/assets/images/pages/page7.png",
+      backimage:"./src/assets/images/pages/page8.png"},
+      {frontimage: "./src/assets/images/pages/page9.png",
+        backimage:"./src/assets/images/pages/endpage.png"},
+        {frontimage: "./src/assets/images/pages/endpage2.png",
+        backimage:"./src/assets/images/pages/ad.png"}
   ],
 });

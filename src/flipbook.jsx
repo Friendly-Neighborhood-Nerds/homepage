@@ -21,13 +21,13 @@ export default function Flipbook(props) {
   }
   const [book] = createSignal(props);
   return (
-      <div class={`${styles.book} lg:w-90 lg:h-117 md:h-111 md:w-85 sm:w-70 sm:h-91 xs:h-78 xs:w-60 lg:ml-90 md:ml-85 sm:ml-70 ml-60 my-25 relative perspective-distant transform-3d`}>
+      <div class={`lg:w-90 lg:h-117 md:h-111 md:w-85 sm:w-70 sm:h-91 xs:h-78 xs:w-60 lg:ml-90 md:ml-85 sm:ml-70 ml-60 my-25 relative perspective-distant transform-3d`}>
         <For each={book().pages}>{(page, i) =>
             <input onchange={flip} type="checkbox" id={`page${i()}`} class={`hidden`} />
           }
         </For>
         <img ref={arrowImg} src={arrow} alt="arrow pointing to flipbook" class="absolute top-30 -left-90 animate-breathing" />
-        <div class={`${styles.pages} absolute top-1/100 left-3/100 z-10 transform-3d w-full h-98/100`}>
+        <div class={` absolute top-1/100 left-3/100 z-10 transform-3d w-full h-98/100`}>
           <For each={book().pages}>{(page, i) =>
               <>
                 <div ref={frontpages[i()]} style={{ "background-image": `url(${page.frontimage})`, transform: `rotateY(-${28 - 1 * i()}deg)` }} class={`w-full bg-white h-full rounded-r-md bg-cover origin-[left_center] transition-transform duration-1000 ease-[ease] duration-500 absolute top-0 left-0 transform-3d hover:shadow-[inset_1px_0px_2px_rgba(50,50,50,0.1),inset_-3px_1px_1px_rgba(150,150,150,0.2)] shadow-[inset_0px_-1px_2px_rgba(50,50,50,0.1),inset_-1px_0px_1px_rgba(150,150,150,0.2)]`}>
