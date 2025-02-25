@@ -21,12 +21,12 @@ export default function Flipbook(props) {
   }
   const [book] = createSignal(props);
   return (
-      <div class={`lg:w-90 lg:h-117 md:h-111 md:w-85 sm:w-70 sm:h-91 xs:h-78 xs:w-60 lg:ml-90 md:ml-85 sm:ml-70 ml-60 my-25 relative perspective-distant transform-3d`}>
+      <div class={`lg:w-90 lg:h-117 md:h-111 md:w-85 sm:w-70 sm:h-91 xs:h-78 xs:w-60 w-45 h-59 lg:ml-90 md:ml-85 sm:ml-70 xs:ml-60 ml-45 my-25 relative perspective-distant transform-3d`}>
         <For each={book().pages}>{(page, i) =>
             <input onchange={flip} type="checkbox" id={`page${i()}`} class={`hidden`} />
           }
         </For>
-        <img ref={arrowImg} src={arrow} alt="arrow pointing to flipbook" class="absolute top-30 -left-90 animate-breathing" />
+        <img ref={arrowImg} src={arrow} alt="arrow pointing to flipbook" class="absolute md:top-30 sm:top-25 top-20 -left-60 sm:-left-75 md:-left-90 animate-breathing" />
         <div class={` absolute top-1/100 left-3/100 z-10 transform-3d w-full h-98/100`}>
           <For each={book().pages}>{(page, i) =>
               <>
