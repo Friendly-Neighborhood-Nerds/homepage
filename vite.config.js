@@ -7,6 +7,7 @@ export default defineConfig({
     tailwindcss(),
     solidPlugin(),
   ],
+  base: "/homepage/",
   server: {
     port: 3000,
   },
