@@ -1,5 +1,4 @@
-import { createSignal, createEffect } from "solid-js";
-import styles from './flipbook.module.css';
+import { createSignal } from "solid-js";
 import arrow from './assets/images/arrow.png';
 
 export default function Flipbook(props) {
